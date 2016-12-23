@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -9,7 +17,7 @@
 
 .App-header {
   background-color: #222;
-  height: 150px;
+  height: 180px;
   padding: 20px;
   color: white;
 }
@@ -22,3 +30,22 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.counter {
+  background: #e3e3e3;
+  padding: 10px;
+  margin: 40px;
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+}
+
+.counter-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+

@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import Counter from './Counter';
-import logo from './logo.svg';
 import './App.css';
 
-
-class App extends Component {
+class Counter extends Component {
   constructor(props) {
     super(props);
     this.state = {counter: 0};
@@ -22,16 +19,14 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Hydrate</h2>
+      <div className="counter" onClick={this.increment}>
+        <div className="counter-container">
+          <div className="title">Alcohol</div>
+          <p className="count">{this.state.counter}</p>
         </div>
-        <Counter increment={1} />
-        <Counter increment={1} />
       </div>
     );
   }
 }
 
-export default App;
+export default Counter;

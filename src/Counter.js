@@ -21,7 +21,7 @@ class Counter extends Component {
     return (
       <div className="counter" onClick={this.increment}>
         <div className="counter-container">
-          <div className="title">Alcohol</div>
+          <div className="title">{this.props.name}</div>
           <p className="count">{this.state.counter}</p>
         </div>
       </div>

@@ -5,21 +5,6 @@ import './App.css';
 
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {counter: 0};
-
-    this.increment = this.increment.bind(this);
-  }
-
-  increment() {
-    this.setState((prevState) => {
-      return ({
-        counter: prevState.counter + this.props.increment
-      })
-    });
-  }
-
   render() {
     return (
       <div className="App">
@@ -27,8 +12,8 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Hydrate</h2>
         </div>
-        <Counter increment={1} />
-        <Counter increment={1} />
+        <Counter increment={1} name="Alcohol" />
+        <Counter increment={1} name="Water" />
       </div>
     );
   }
